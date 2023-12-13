@@ -1,0 +1,118 @@
+  /* You can either copy the below and paste it between style tags on your HTML page, OR you can copy this to a file and name it .css and link it from your HTML page.   border-bottom:2px solid var(--subtitle-color);  align-items: center*/
+:root {
+  --bg-color:#000000;
+  --border-color:#49424f;
+  --subtitle-color:#a29ba8;
+  --link-color2:#7238a1;
+  --link-color:#9045cc;
+}
+
+html, body {
+  margin:0;
+  padding:10;
+  background-color:#000000;
+  background-attachment:fixed;
+  background-image:url(/raindrops.webp);
+}
+body a {
+  color:var(--link-color);
+}
+header {
+  width:auto;
+  height:150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:url(/2kkilibrary.png);
+  background-size:25%;
+  
+}
+.flex {
+  display:flex;
+}
+.sidebar {
+  max-width:600px;
+  width:250px;
+  height:100vh;
+  margin-right:20px;
+  position:scroll;
+}
+article {
+  color:#ffffff;
+  background-color:var(--bg-color);
+  border:1px solid var(--border-color);
+  margin-top:20px;
+  max-width:650px;
+  margin-left:10px;
+  margin-right:10px;
+  
+}
+.subtitle {
+  color:var(--subtitle-color);
+  font-size:18px;
+  font-weight:bold;
+
+  margin-left:10px;
+  margin-right:10px;
+  text-align:right;
+  padding-top:20px;
+}
+article > p {
+  padding:10px;
+  padding-left:20px;
+}
+.links {
+  list-style-type:'+';
+  font-size:16px;
+  
+}
+.links li a {
+  color:var(--link-color);
+  letter-spacing:1px;
+  text-decoration:none;
+}
+main {
+  margin-top:-21px;
+}
+   section > p {
+     padding:10px;
+   }
+footer {
+  color:var(--subtitle-color);
+  margin-left:20px;
+  max-width:30%;
+  font-size:12px;
+}
+
+ @media only screen and (max-width: 630px) {
+   .sidebar {
+     position:relative;
+     max-width:100%;
+     width:100%;
+     height:150px;
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     overflow:hidden;
+   }
+   .flex {
+     flex-wrap:wrap;
+     flex-direction:row;
+   .flexj {
+     flex-wrap:wrap;
+     flex-direction:row;
+     align-items: center;
+     justify-content:center;
+   }
+   .right {
+     order:1;
+     width:100%;
+   }
+   .left {
+     order:2;
+   }
+   section {
+     display:flex;
+     flex-wrap:wrap;
+     width:120px;
+   }
+}
